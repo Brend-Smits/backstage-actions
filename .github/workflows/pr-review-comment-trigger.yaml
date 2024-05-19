@@ -12,7 +12,7 @@ jobs:
     # PR for re-review if this workflow did not fail.
     if: github.event.comment.user.id == github.event.pull_request.user.id
 
-      # Inspired by https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#using-data-from-the-triggering-workflow
+    # Inspired by https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#using-data-from-the-triggering-workflow
     steps:
       - name: Save PR number
         env:
@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir -p ./pr
           echo $PR_NUMBER > ./pr/pr_number
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@a8a3f3ad30e3422c9c7b888a15615d19a852ae32 # ratchet:actions/upload-artifact@v3
         with:
           name: pr_number-${{ github.event.pull_request.number }}
           path: pr/

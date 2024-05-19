@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: backstage/actions/cron@v0.6.2
+      - uses: backstage/actions/cron@140a9d5d2fcdb2c97aa7c435bf67834a9fb42bc9 # ratchet:backstage/actions/cron@v0.6.2
         with:
           app-id: ${{ secrets.BACKSTAGE_GOALIE_APPLICATION_ID }}
           private-key: ${{ secrets.BACKSTAGE_GOALIE_PRIVATE_KEY }}
