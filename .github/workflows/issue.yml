@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Sync Issues
-        uses: backstage/actions/issue-sync@v0.6.2
+        uses: backstage/actions/issue-sync@140a9d5d2fcdb2c97aa7c435bf67834a9fb42bc9 # ratchet:backstage/actions/issue-sync@v0.6.2
